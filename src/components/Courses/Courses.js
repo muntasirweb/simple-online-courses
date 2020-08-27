@@ -16,7 +16,7 @@ const Courses = () => {
         <div className="d-flex justify-content-between">
             <div>
             {
-                courses.map(item => <Item enrollCoursesHandler={enrollCoursesHandler} course = {item}></Item>)
+                courses.map(item => <Item enrollCoursesHandler={enrollCoursesHandler} course = {item} key={item.id}></Item>)
             }
             </div>
             <div>
