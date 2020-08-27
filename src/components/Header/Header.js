@@ -1,9 +1,16 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Header = () => {
     return (
         <div>
-            <h1>Simple Online Courses</h1>
+            <nav className="navbar navbar-light bg-light justify-content-between">
+            <a className="navbar-brand" href="/home">Simple Online Courses</a>
+            <form className="form-inline">
+                <input className="form-control mr-sm-2" type="search" placeholder="Search courses" aria-label="Search" />
+                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            </nav>
         </div>
     );
 };
